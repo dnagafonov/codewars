@@ -34,17 +34,21 @@ function min(arr){
 min(arr);
 
 //task5
-function expandedForm(num) {
-	var temp;
+function expandedForm(num) {				//error
+	var temp = 0;
 	var arr = [];
-	for (var i = num.length; i >= 0; i--) {
-		temp = num%10;
-		arr.push(temp*(Math.pow(10,i)));
+	for (var i = 0; i != num.toString().length; i++) {
+		temp = Number(num)%10;
+		arr.push(temp*(Math.pow(10,i-1)));
+		temp = 0;
 	}
-	return console.log(arr.length);
+	return console.log(arr[0]);
 }
-expandedForm(232);
+expandedForm(335);
 
-
+//task6
+function opposite(number) {
+  return number *= -1;
+opposite(-23);
 
 
