@@ -1,4 +1,4 @@
-/*var str = '4 5 29 54 4 0 -214 542 -64 1 -3 6 -6'; 
+var str = '4 5 29 54 4 0 -214 542 -64 1 -3 6 -6'; 
 function highAndLow(str){
  	arr1 = str.split(' ');
  	console.log(arr1);
@@ -7,20 +7,21 @@ function highAndLow(str){
  	console.log(arr1);
  	return String(arr1[arr1.length-1] + " " + arr1[0]);
 }
-console.log(highAndLow(str));
-*/
-/*var str = "ATTGC";
+//console.log(highAndLow(str));
+
+
+var str = "ATTGC";
 function DNAStrand(str){
-	var newstr = str.replace('A','T'  'T','A'  'C','G'  'G','C');
+	var newstr = str.replace('A','T','T','A','C','G','G','C');
 	return newstr;
-}*/
+}
 //console.log(DNAStrand(str));
 
-/*var chars = {'T':'A','A':'T','C':'G','G':'C'};
+
+var chars = {'T':'A','A':'T','C':'G','G':'C'};
 var s = 'TTTT';
 s = s.replace(/[TACG]/g, m => chars[m]);
-console.log(s);
-
+//console.log(s);
 
 
 function digital_root(n) {
@@ -31,7 +32,7 @@ function digital_root(n) {
 }
 digits.reverse();
 }
-console.log(digital_root(942));
+//console.log(digital_root(942));
 
 var arr = [[18, 20],
 			[45, 2],
@@ -53,8 +54,8 @@ function openOrSenior(arr) {
   }
 
 }
-console.log(openOrSenior(arr));
-*/
+//console.log(openOrSenior(arr));
+
 
 var str = "How can mirrors be real if our eyes aren't real";
 toJadenCase = function (str) {
@@ -73,7 +74,7 @@ function repeatStr (n, s) {
   var s1 = s;
   return s1.repeat(n);
 }
-repeatStr(5,'gfg');
+//repeatStr(5,'gfg');
 
 
 var input = [1,2,3,4,5,7,8,9,-10];
@@ -110,8 +111,8 @@ function bouncingBall(h,  bounce,  window) {
 		}
 	}
     if(res > 0) 
-    	console.log(res);
+    	return res;
     else 
-    	console.log(-1);
+    	return -1;
 }
-bouncingBall(30.0, 0.66, 1.5)
+console.log(bouncingBall(30.0, 0.66, 1.5));
