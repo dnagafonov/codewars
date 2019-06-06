@@ -66,4 +66,52 @@ toJadenCase = function (str) {
 	console.log(arr1.join(' '));
 
 }
-toJadenCase(str)
+//toJadenCase(str);
+
+
+function repeatStr (n, s) {
+  var s1 = s;
+  return s1.repeat(n);
+}
+repeatStr(5,'gfg');
+
+
+var input = [1,2,3,4,5,7,8,9,-10];
+function countPositivesSumNegatives(input) {
+	var arrRes = [];
+	var count1 = 0;
+	var sum = 0;
+
+	for (var i = input.length - 1; i >= 0; i--) {
+		if(input[i] > 0){
+			count1++;
+		}
+		else{
+			sum += input[i];
+		}
+	}
+	arrRes.push(count1, sum);
+    return console.log(arrRes[0], arrRes[1]);
+}
+//countPositivesSumNegatives(input);
+
+
+var isSquare = function(n){
+   return Number.isInteger(Math.sqrt(n)); // fix me
+}
+//isSquare(4);
+
+
+function bouncingBall(h,  bounce,  window) {
+	var res = 0;
+	if(h > 0 && 0 < bounce && bounce < 1 && window < h){
+		for (var i = h; i > window; i -= bounce) {
+			res++;
+		}
+	}
+    if(res > 0) 
+    	console.log(res);
+    else 
+    	console.log(-1);
+}
+bouncingBall(30.0, 0.66, 1.5)
