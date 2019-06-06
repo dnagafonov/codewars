@@ -103,16 +103,6 @@ var isSquare = function(n){
 //isSquare(4);
 
 
-function bouncingBall(h,  bounce,  window) {
-	var res = 0;
-	if(h > 0 && 0 < bounce && bounce < 1 && window < h){
-		for (var i = h; i > window; i -= bounce) {
-			res++;
-		}
-	}
-    if(res > 0) 
-    	return res;
-    else 
-    	return -1;
-}
-console.log(bouncingBall(30.0, 0.66, 1.5));
+
+
+
