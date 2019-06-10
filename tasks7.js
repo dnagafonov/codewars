@@ -57,7 +57,15 @@ var arr1 = [1,4,5,2];
 function squareSum(arr1){
 	for (var i = 0; i != arr1.length - 1; i--) {
 		var temp = 0;
-		temp += Math.pow.(arr1[i],2);
+		temp += Math.pow(arr1[i],2);
 	}
 	return console.log(temp);
 }
+
+//task8
+var dna = "ATTGC";
+function DNAStrand(dna){
+	let chars = {'T':'A','A':'T','C':'G','G':'C'};
+	return dna = dna.replace(/[TACG]/g, m => chars[m]);
+}
+console.log("t8",DNAStrand(dna));

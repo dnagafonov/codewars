@@ -19,9 +19,9 @@ function DNAStrand(str){
 
 
 var chars = {'T':'A','A':'T','C':'G','G':'C'};
-var s = 'TTTT';
+var s = 'TATC';
 s = s.replace(/[TACG]/g, m => chars[m]);
-//console.log(s);
+console.log(s);
 
 
 function digital_root(n) {
@@ -98,10 +98,15 @@ function countPositivesSumNegatives(input) {
 
 
 var isSquare = function(n){
-   return Number.isInteger(Math.sqrt(n)); // fix me
+   return Number.isInteger(Math.sqrt(n));
 }
 //isSquare(4);
 
+var array = [3,4,5,5,6,7,8,9]
+function find_average(array){
+	return array.reduce(function(a, b) { return a + b; })/array.length;
+}
+console.log(find_average(array));
 
 
 
